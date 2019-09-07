@@ -16,6 +16,9 @@ ro.boot.dynamic_partitions=true
 vendor.gatekeeper.disable_spu=true
 fbe.metadata.wrappedkey=true
 
+# Disable Rescue Party
+persist.sys.disable_rescue=true
+
 # AVB
 ro.boot.avb_version=1.0
 ro.boot.vbmeta.avb_version=1.0
