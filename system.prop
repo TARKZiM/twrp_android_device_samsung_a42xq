@@ -1,0 +1,21 @@
+# Device release name
+ro.display.series=Samsung Galaxy A52
+
+# product/board stuff
+ro.product.board=atoll
+ro.board.platform=atoll
+
+# USB and MTP stuff
+persist.sys.usb.config=mtp
+sys.usb.controller=a600000.dwc3
+
+# Dynamic partition
+ro.boot.dynamic_partitions=true
+
+# Encryption
+vendor.gatekeeper.disable_spu=true
+fbe.metadata.wrappedkey=true
+
+# AVB
+ro.boot.avb_version=1.0
+ro.boot.vbmeta.avb_version=1.0
