@@ -21,3 +21,7 @@ BOARD_USES_QCOM_FBE_DECRYPTION := true
 PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
+
+# Apex
+PRODUCT_HOST_PACKAGES += \
+    libandroidicu
