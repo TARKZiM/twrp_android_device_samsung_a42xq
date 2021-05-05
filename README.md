@@ -7,8 +7,8 @@
 * Soon
 
 ### Credits
-* Darth9
+* DarthJabba9
 * travarilo
 
 ### Links
-* [Kernel source](https://github.com/Velosh/android_kernel_samsung_a52q)
+* [Kernel source](https://github.com/Samsung-SM7215/android_kernel_samsung_sm7125)
