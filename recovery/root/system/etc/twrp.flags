@@ -19,7 +19,7 @@ system_ext          /system_ext  ext4        ro,barrier=1,discard               
 /omr                ext4         /dev/block/bootdevice/by-name/omr               flags=display="OMR";backup=1;wipeingui
 
 # ETC Moint Point
-/data               ext4         /dev/block/bootdevice/by-name/userdata          flags=fileencryption=ice:aes-256-cts;wrappedkey;keydirectory=/metadata/vold/metadata_encryption;encryptable=footer
+/data               ext4         /dev/block/bootdevice/by-name/userdata
 /cache              ext4         /dev/block/bootdevice/by-name/cache             flags=display="Cache";backup=1;wipeingui
 /metadata           ext4         /dev/block/bootdevice/by-name/metadata          flags=display="Metadata";backup=1
 

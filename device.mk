@@ -15,12 +15,12 @@
 #
 
 # Encryption: Use common FBE decryption script
-BOARD_USES_QCOM_FBE_DECRYPTION := true
+#BOARD_USES_QCOM_FBE_DECRYPTION := true
 
 # Encryption: Setup it
-PRODUCT_PACKAGES += \
-    qcom_decrypt \
-    qcom_decrypt_fbe
+#PRODUCT_PACKAGES += \
+#    qcom_decrypt \
+#    qcom_decrypt_fbe
 
 # Apex
 PRODUCT_HOST_PACKAGES += \
