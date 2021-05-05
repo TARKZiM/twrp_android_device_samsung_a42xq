@@ -25,5 +25,5 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 PRODUCT_DEVICE := a52q
 PRODUCT_NAME := omni_a52q
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := Samsung Galaxy A20s
+PRODUCT_MODEL := Samsung Galaxy A52
 PRODUCT_MANUFACTURER := Samsung
