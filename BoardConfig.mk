@@ -135,7 +135,7 @@ LZMA_RAMDISK_TARGETS := recovery
 BOARD_SUPER_PARTITION_GROUPS := main
 BOARD_SUPER_PARTITION_SIZE := 7730906700
 BOARD_MAIN_SIZE := 7730906700
-BOARD_MAIN_PARTITION_LIST := system system_ext vendor product
+BOARD_MAIN_PARTITION_LIST := system odm vendor product
 
 # TWRP Configuration: Basic config
 TW_THEME := portrait_hdpi
