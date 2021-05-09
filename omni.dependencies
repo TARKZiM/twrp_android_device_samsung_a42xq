@@ -4,5 +4,17 @@
     "repository":  "android_device_qcom_twrp-common",
     "target_path": "device/qcom/twrp-common",
     "revision":    "android-10"
+  },
+  {
+    "remote":      "github",
+    "repository":  "proprietary-stuff/llvm-arm-toolchain-ship-10.0",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-snapdragon",
+    "revision":    "master"
+  },
+  {
+    "remote":      "github",
+    "repository":  "Samsung-SM7125/android_kernel_samsung_sm7125",
+    "target_path": "kernel/samsung/sm7125",
+    "revision":    "master"
   }
 ]
