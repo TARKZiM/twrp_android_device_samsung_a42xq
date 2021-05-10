@@ -8,7 +8,7 @@
   {
     "remote":      "github",
     "repository":  "proprietary-stuff/llvm-arm-toolchain-ship-10.0",
-    "target_path": "prebuilts/clang/host/linux-x86/clang-snapdragon",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-sdclang",
     "revision":    "master"
   },
   {
