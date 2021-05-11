@@ -17,9 +17,8 @@
 DEVICE_PATH := device/samsung/a52q
 
 # Android Verified Boot
-BOARD_AVB_ENABLE := true
-BOARD_AVB_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
-BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
+BOARD_AVB_ENABLE := false
+BOARD_BUILD_DISABLED_VBMETAIMAGE := true
 
 # Prebuilt AVB key for GSIs
 BOARD_AVB_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
