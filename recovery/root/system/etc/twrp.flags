@@ -19,9 +19,8 @@ odm                 /odm         ext4        ro,barrier=1,discard               
 /omr                ext4         /dev/block/bootdevice/by-name/omr               flags=display="OMR";backup=1;wipeingui
 
 # ETC Moint Point
-/data               ext4         /dev/block/bootdevice/by-name/userdata
 /cache              ext4         /dev/block/bootdevice/by-name/cache             flags=display="Cache";backup=1;wipeingui
-/metadata           ext4         /dev/block/bootdevice/by-name/metadata          flags=display="Metadata";backup=1
+/metadata           ext4         /dev/block/bootdevice/by-name/metadata          flags=display="Metadata";backup=1;wrappedkey
 
 # Persist Point
 /persist            ext4         /dev/block/bootdevice/by-name/persist           flags=display="Persist";backup=1
