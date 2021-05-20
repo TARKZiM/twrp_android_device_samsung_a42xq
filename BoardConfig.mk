@@ -56,20 +56,10 @@ BOARD_BOOTIMG_HEADER_VERSION := 2
 
 # Kernel: Board (kernel...) flags
 BOARD_NAME               := SRPTH31C001
-BOARD_KERNEL_IMAGE_NAME  := Image.gz
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_RAMDISK_OFFSET     := 0x02000000
 BOARD_KERNEL_TAGS_OFFSET := 0x01e00000
-
-# Kernel: Build flags
-TARGET_KERNEL_CLANG_VERSION := sdclang
-TARGET_KERNEL_CLANG_PATH    := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_SOURCE        := kernel/samsung/sm7125
-TARGET_KERNEL_CONFIG        := vendor/a52q_defconfig
-TARGET_KERNEL_HEADER_ARCH   := arm64
-TARGET_KERNEL_ARCH          := arm64
 
 # Kernel: mkbootimgs args
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
@@ -78,6 +68,10 @@ BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --board $(BOARD_NAME)
+
+# Prebuilt: Kernel
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
+BOARD_KERNEL_IMAGE_NAME := Image.gz
 
 # Prebuilt: DTB
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
