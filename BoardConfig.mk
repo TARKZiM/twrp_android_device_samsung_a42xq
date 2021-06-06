@@ -147,6 +147,7 @@ TW_NO_EXFAT_FUSE := true
 TW_Y_OFFSET := 60
 TW_H_OFFSET := -60
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file"
+TW_USE_SAMSUNG_HAPTICS := true
 
 # TWRP Configuration: Brightness/CPU
 TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone28/temp
