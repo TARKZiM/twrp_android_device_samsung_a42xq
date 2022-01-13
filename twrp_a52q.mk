@@ -18,12 +18,12 @@
 $(call inherit-product, device/samsung/a52q/device.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := a52q
-PRODUCT_NAME := omni_a52q
+PRODUCT_NAME := twrp_a52q
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := Samsung Galaxy A52
 PRODUCT_MANUFACTURER := Samsung
