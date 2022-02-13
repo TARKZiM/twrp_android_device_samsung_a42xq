@@ -26,8 +26,8 @@
 #
 
 on fs
-    # Force ANDROID_ROOT to /system
-    export ANDROID_ROOT /system
+    # Force ANDROID_ROOT to /system_root
+    export ANDROID_ROOT /system_root
 
     # Symlink bootdevice
     wait /dev/block/platform/${ro.boot.boot_devices}
