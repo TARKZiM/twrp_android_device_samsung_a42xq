@@ -32,3 +32,13 @@ on fs
     # Symlink bootdevice
     wait /dev/block/platform/${ro.boot.boot_devices}
     symlink /dev/block/platform/${ro.boot.boot_devices} /dev/block/bootdevice
+
+on property:sys.usb.ffs.ready=1
+    start mountfix
+
+service mountfix /sbin/sh /system/bin/mount.sh
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:recovery:s0
