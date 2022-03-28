@@ -14,14 +14,14 @@
 # limitations under the License.
 #
 
-# Encryption: Use common FBE decryption script
-BOARD_USES_QCOM_FBE_DECRYPTION := true
-
-# Encryption: Setup it
+# Encryption
 PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
 
-# Apex
-PRODUCT_HOST_PACKAGES += \
+TARGET_RECOVERY_DEVICE_MODULES += \
+    libion \
     libandroidicu
+
+RECOVERY_LIBRARY_SOURCE_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so

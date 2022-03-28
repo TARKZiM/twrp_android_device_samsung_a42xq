@@ -27,6 +27,9 @@
 
 import /init.recovery.qcom_decrypt.rc
 
+on init
+    setprop prepdecrypt.loglevel 2
+
 on fs
     # Force ANDROID_ROOT to /system_root
     export ANDROID_ROOT /system_root
@@ -34,6 +37,16 @@ on fs
     # Symlink bootdevice
     wait /dev/block/platform/${ro.boot.boot_devices}
     symlink /dev/block/platform/${ro.boot.boot_devices} /dev/block/bootdevice
+
+    chmod 0660 /dev/qseecom
+    chown system drmrpc /dev/qseecom
+    chmod 0664 /dev/ion
+    chown system system /dev/ion
+
+    mount vfat /dev/block/bootdevice/by-name/apnhlos /firmware ro shortname=lower,uid=0,gid=1000,dmask=227,fmask=337
+
+on property:ro.build.version.security_patch=*
+    setprop ro.vendor.build.security_patch ${ro.build.version.security_patch}
 
 on property:sys.usb.ffs.ready=1
     start mountfix
