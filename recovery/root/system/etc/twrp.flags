@@ -16,7 +16,7 @@ odm                 /odm         ext4        ro,barrier=1,discard               
 
 # ETC Moint Point
 /cache              ext4         /dev/block/bootdevice/by-name/cache             flags=display="Cache";backup=1;wipeingui
-/metadata           ext4         /dev/block/bootdevice/by-name/metadata          flags=display="Metadata";backup=1;wrappedkey
+/metadata           ext4         /dev/block/bootdevice/by-name/metadata          flags=display="Metadata";wipeingui;wrappedkey
 
 # Persist Point
 /persist            ext4         /dev/block/bootdevice/by-name/persist           flags=display="Persist";backup=1
