@@ -14,16 +14,16 @@
 # limitations under the License.
 #
 
-# Inherit from a52q device
-$(call inherit-product, device/samsung/a52q/device.mk)
+# Inherit from a42xq device
+$(call inherit-product, device/samsung/a42xq/device.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := a52q
-PRODUCT_NAME := twrp_a52q
+PRODUCT_DEVICE := a42xq
+PRODUCT_NAME := twrp_a42xq
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := Samsung Galaxy A52
+PRODUCT_MODEL := Samsung Galaxy A42 5G
 PRODUCT_MANUFACTURER := Samsung

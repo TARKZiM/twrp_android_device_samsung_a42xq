@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/twrp_a52q.mk
+     $(LOCAL_DIR)/twrp_a42xq.mk

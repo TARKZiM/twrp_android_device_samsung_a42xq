@@ -9,10 +9,10 @@
 /vbmeta             emmc         /dev/block/bootdevice/by-name/vbmeta            flags=backup=1;display="Vbmeta Image"
 
 # Logical Points
-system              /system      ext4        ro,barrier=1,discard                wait,logical,first_stage_mount
-vendor              /vendor      ext4        ro,barrier=1,discard                wait,logical,first_stage_mount
-product             /product     ext4        ro,barrier=1,discard                wait,logical,first_stage_mount
-odm                 /odm         ext4        ro,barrier=1,discard                wait,logical,first_stage_mount
+system              /system      ext4        discard                wait,logical,first_stage_mount
+vendor              /vendor      ext4        discard                wait,logical,first_stage_mount
+product             /product     ext4        discard                wait,logical,first_stage_mount
+odm                 /odm         ext4        discard                wait,logical,first_stage_mount
 
 # ETC Moint Point
 /cache              ext4         /dev/block/bootdevice/by-name/cache             flags=display="Cache";backup=1;wipeingui

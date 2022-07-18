@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/a52q
+DEVICE_PATH := device/samsung/a42xq
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := false
@@ -48,14 +48,15 @@ ENABLE_SCHEDBOOST := true
 TARGET_USES_UEFI := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := a52q
+TARGET_OTA_ASSERT_DEVICE := a42xq
 
 # Kernel: Base flags
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 androidboot.usbcontroller=a600000.dwc3 printk.devkmsg=on firmware_class.path=/vendor/firmware_mnt/image
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_BOOTIMG_HEADER_VERSION := 2
 
 # Kernel: Board (kernel...) flags
-BOARD_NAME               := SRPTH31C001
+BOARD_NAME               := SRPTF23D003
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_RAMDISK_OFFSET     := 0x02000000
@@ -82,11 +83,11 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 
 # Platform: Bootloader
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := atoll
+TARGET_BOOTLOADER_BOARD_NAME := SRPTF23D003
 
 # Platform: Board
-TARGET_BOARD_PLATFORM := atoll
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
+TARGET_BOARD_PLATFORM := lito
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno619
 QCOM_BOARD_PLATFORMS += $(TARGET_BOARD_PLATFORM)
 
 # Encryption: Rollback for Encryption
@@ -143,12 +144,12 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_NO_EXFAT_FUSE := true
-TW_Y_OFFSET := 142
-TW_H_OFFSET := -142
+TW_Y_OFFSET := 60
+TW_H_OFFSET := -60
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file"
 
 # TWRP Configuration: Brightness/CPU
-TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone17/temp
+TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone28/temp
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_MAX_BRIGHTNESS := 365
 TW_DEFAULT_BRIGHTNESS := 219

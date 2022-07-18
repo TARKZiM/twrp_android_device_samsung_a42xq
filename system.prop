@@ -1,9 +1,9 @@
 # Device release name
-ro.display.series=Samsung Galaxy A52
+ro.display.series=Samsung Galaxy A42 5G
 
 # product/board stuff
-ro.product.board=atoll
-ro.board.platform=atoll
+ro.product.board=lito
+ro.board.platform=lito
 
 # USB and MTP stuff
 persist.sys.usb.config=mtp
