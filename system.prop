@@ -15,6 +15,7 @@ ro.boot.dynamic_partitions=true
 # Encryption
 vendor.gatekeeper.disable_spu=true
 fbe.metadata.wrappedkey=true
+ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Disable Rescue Party
 persist.sys.disable_rescue=true
