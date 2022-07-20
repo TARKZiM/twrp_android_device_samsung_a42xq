@@ -25,6 +25,8 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+import /init.recovery.qcom_decrypt.rc
+
 on fs
     # Force ANDROID_ROOT to /system_root
     export ANDROID_ROOT /system_root
