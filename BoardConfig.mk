@@ -166,3 +166,6 @@ TW_DEFAULT_BRIGHTNESS := 219
 # TWRP Configuration: Logd
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# Backups
+TW_BACKUP_EXCLUSIONS := /data/fonts
