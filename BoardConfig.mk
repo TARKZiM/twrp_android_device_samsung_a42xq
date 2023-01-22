@@ -83,7 +83,7 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 
 # Platform: Bootloader
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := SRPTF23D003
+TARGET_BOOTLOADER_BOARD_NAME := lito
 
 # Platform: Board
 TARGET_BOARD_PLATFORM := lito
@@ -151,6 +151,7 @@ TW_Y_OFFSET := 60
 TW_H_OFFSET := -60
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file"
 TW_USE_SAMSUNG_HAPTICS := true
+TARGET_SUPPORTS_64_BIT_APPS := false
 
 # TWRP Configuration: Brightness/CPU
 TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone28/temp
