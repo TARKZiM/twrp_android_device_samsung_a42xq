@@ -156,6 +156,7 @@ TW_USE_SAMSUNG_HAPTICS := true
 TARGET_SUPPORTS_64_BIT_APPS := false
 TW_CRYPTO_SYSTEM_VOLD_DEBUG := true
 TW_INCLUDE_RESETPROP := true
+TW_FORCE_KEYMASTER_VER := true
 
 # TWRP Configuration: Brightness/CPU
 TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone28/temp
